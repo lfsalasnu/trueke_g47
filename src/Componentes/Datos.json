@@ -1,0 +1,43 @@
+[
+    {
+        "nombre": "Estado 1",
+        "descripcion": "Descripcion estado 1",
+        "cantidad": 10,
+        "imagen":"./Recursos/img1.jpg",
+        "usuario":"Luis",
+        "valor":"Alta"
+
+    },
+    {
+        "nombre": "Estado 2",
+        "descripcion": "Descripcion estado 2",
+        "cantidad": 20,
+        "imagen":"./Recursos/img2.jpg",
+        "usuario":"Paula",
+        "valor":"Media"
+    },
+    {
+        "nombre": "Estado 3",
+        "descripcion": "Descripcion estado 3",
+        "cantidad": 30,
+        "imagen":"./Recursos/despues.webp",
+        "usuario":"Ariana",
+        "valor":"Baja"
+    },
+    {
+        "nombre": "Estado 4",
+        "descripcion": "Descripcion estado 4",
+        "cantidad": 40,
+        "imagen":"./Recursos/dracula.webp",
+        "usuario":"Andres",
+        "valor":"Alta"
+    },
+    {
+        "nombre": "Estado 5",
+        "descripcion": "Descripcion estado 5",
+        "cantidad": 50,
+        "imagen":"./Recursos/22-11-63.jpg",
+        "usuario":"Maria",
+        "valor":"Alta"
+    }
+]

@@ -7,7 +7,7 @@ class Formulario extends Component{
             nombre:"",
             descripcion:"",
             usuario:"",
-            numero:0,
+            cantidad:0,
             valor:"Alto",
             imagen:""
         }
@@ -39,7 +39,7 @@ class Formulario extends Component{
                         <input type="text" placeholder="Descripción Articulo" name="descripcion" className="form-control mt-3" onChange={this.cambio}/>   
                     </div>
                     <div className="form-group">
-                        <input type="number" placeholder="Cantidad" name="numero" className="form-control mt-3" onChange={this.cambio}/>   
+                        <input type="number" placeholder="Cantidad" name="cantidad" className="form-control mt-3" onChange={this.cambio}/>   
                     </div>
                     <div className="form-group">
                         <input type="text" placeholder="Usuario" name="usuario" className="form-control mt-3" onChange={this.cambio}/>   

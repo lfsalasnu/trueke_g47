@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import App from "../App";
+import Cargar from "./Cargar";
+//import App from "../App";
+import Crear_usuario from "./Crear_usuario";
 import Formulario from "./Formulario";
+import Inicio_sesion from "./Inicio_sesion";
 class Navegacion extends Component {
     render() {
         return (
@@ -30,16 +33,16 @@ class Navegacion extends Component {
 
                 <div className="tab-content" id="myTabContent">
                     <div className="tab-pane fade show active text-white" id="enlace1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <App />
+                        <Cargar/>
                     </div>
                     <div className="tab-pane fade text-white" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <Formulario/>
                     </div>
                     <div className="tab-pane fade text-white" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        Enlace3
+                        <Inicio_sesion/>
                     </div>
                     <div className="tab-pane fade text-white" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-                        Enlace4
+                        <Crear_usuario/>
                     </div>
                 </div>
             </div>

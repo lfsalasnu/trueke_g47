@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 //import img1 from "./img1.png";
 
-class Tarjeta extends Component {
+class Articulos extends Component {
     
     constructor(){
         super();
         this.state={
-            titulo:''
+            nombre:''
         }
     }
     editar(){
@@ -17,18 +17,18 @@ class Tarjeta extends Component {
         
         return (
 
-            <div className="col-sm-4">
+            <div className="col-sm-4 text-center">
                 {/* //row-cols-1 row-cols-md-3 g-4 */}
-                <div className="card mb-4">
+                <div className="card mt-4 bg-dark b border-white">
                     <img height="300" width="auto" src={process.env.PUBLIC_URL+this.props.imagen} className="card-img-top" alt={this.props.numero} />
                     <div className="card-body">
-                        <h5 className="card-title">{this.props.titulo}</h5>
+                        <h5 className="card-title">{this.props.nombre}</h5>
                         <p className="card-text">{this.props.descripcion}</p>
-                        <span className="bg-danger rounded-pill">Prioridad: {this.props.prioridad}</span>
+                        <span className="bg-danger rounded-pill">Valor: {this.props.valor}</span>
                         <br/>
-                        <span className="bg-success rounded-pill">Responsable: {this.props.responsable}</span>
+                        <span className="bg-success rounded-pill">Usuario: {this.props.usuario}</span>
                         <br/>
-                        <span className="bg-primary rounded-pill">Tiempo: {this.props.numero} minutos</span>
+                        <span className="bg-primary rounded-pill">Cantidad: {this.props.cantidad}</span>
                         <br/>
                         <button formTarget="#formulario1" className="btn btn-primary border mx-auto me-2" onClick={this.editar}>Editar</button>
                         <button className="btn btn-danger border mx-auto" >Eliminar</button>
@@ -57,4 +57,4 @@ class Tarjeta extends Component {
     }
 }
 
-export default Tarjeta;
+export default Articulos;
