@@ -6,12 +6,36 @@ class Articulos extends Component {
     constructor(){
         super();
         this.state={
-            nombre:''
+            btn1:
+            <div>
+                <button formTarget="#formulario1" className="btn btn-primary border mx-auto me-2 mt-1" onClick={this.editar}>Editar</button>
+                <button className="btn btn-danger border mx-auto mt-1" onClick={this.eliminar}>Eliminar</button>
+            </div>,
+            btn2:<button formTarget="#formulario1" className="btn btn-success border mx-auto mt-1" onClick={this.intercambiar}>Intercambiar</button>
+        }
+    }
+    botones(usuario){
+        if (usuario=="Luis") {
+            return this.state.btn1;
+        } else {
+            return this.state.btn2;
         }
     }
     editar(){
         alert("Editando...");
     }
+
+    intercambiar(){
+        alert('Intercambiando...')
+    }
+
+    eliminar(){
+        alert('Intercambiando...')
+    }
+
+    
+
+    
     
     render() {
         
@@ -30,8 +54,7 @@ class Articulos extends Component {
                         <br/>
                         <span className="bg-primary rounded-pill">Cantidad: {this.props.cantidad}</span>
                         <br/>
-                        <button formTarget="#formulario1" className="btn btn-primary border mx-auto me-2" onClick={this.editar}>Editar</button>
-                        <button className="btn btn-danger border mx-auto" >Eliminar</button>
+                        {this.botones(this.props.usuario)}
                     </div>
                 </div>
 

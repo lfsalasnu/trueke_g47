@@ -29,7 +29,7 @@ class Formulario extends Component{
 
     render(){
         return(
-            <div className="card w-50 m-auto bg-dark mt-4 mb-4 border-primary">
+            <div className="card w-50 m-auto bg-dark mt-4 mb-4 border-white">
                 <h1 className="m-auto text-white">Nuevo Articulo</h1>
                 <form className="card-body">
                     <div className="form-group">
