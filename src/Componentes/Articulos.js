@@ -44,7 +44,7 @@ class Articulos extends Component {
             <div className="col-sm-4 text-center">
                 {/* //row-cols-1 row-cols-md-3 g-4 */}
                 <div className="card mt-4 bg-dark b border-white">
-                    <img height="300" width="auto" src={process.env.PUBLIC_URL+this.props.imagen} className="card-img-top" alt={this.props.numero} />
+                    <img height="400" width="auto" src={process.env.PUBLIC_URL+this.props.imagen} className="card-img-top" alt={this.props.numero} />
                     <div className="card-body">
                         <h5 className="card-title">{this.props.nombre}</h5>
                         <p className="card-text">{this.props.descripcion}</p>

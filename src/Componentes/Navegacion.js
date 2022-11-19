@@ -4,6 +4,7 @@ import Cargar from "./Cargar";
 import Crear_usuario from "./Crear_usuario";
 import Formulario from "./Formulario";
 import Inicio_sesion from "./Inicio_sesion";
+import Bdmongo from "./Bdmongo";
 class Navegacion extends Component {
     render() {
         return (
@@ -37,6 +38,7 @@ class Navegacion extends Component {
                 <div className="tab-content" id="myTabContent">
                     <div className="tab-pane fade show active text-white" id="enlace1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                         <Cargar/>
+                        <Bdmongo/>
                     </div>
                     <div className="tab-pane fade text-white" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <Formulario/>

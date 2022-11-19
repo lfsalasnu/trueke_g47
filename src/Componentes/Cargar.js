@@ -18,10 +18,10 @@ class Cargar extends Component {
         })
         return (
             <div className="row">
-                {mostrar}
+                {/* {mostrar}
                 <span className="badge badge-pill badge-light ml-2">
                     {this.state.Datos.length}
-                </span>
+                </span> */}
             </div>
         );
     }
