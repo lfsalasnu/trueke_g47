@@ -14,7 +14,7 @@ const Bdmongo=()=>{
     var_datos()
     let mostrar=todo.map((dato)=>{
         return(
-            <Articulos nombre={dato.nombre} descripcion={dato.descripcion} cantidad={dato.cantidad} imagen={dato.imagen} valor={dato.valor} usuario={dato.usuario}/>
+            <Articulos nombre={dato.nombre} descripcion={dato.descripcion} cantidad={dato.cantidad} imagen={dato.imagen} valor={dato.valor} usuario={dato.usuario} id={String(dato._id)}/>
         );
     })
     // <div>

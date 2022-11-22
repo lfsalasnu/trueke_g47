@@ -25,7 +25,7 @@ rutas_usr.post('/nuevo',(req,res)=>{
     //res.json({body})
 })
 
-rutasrutas_usr.get('/todo',(req,res)=>{
+rutas_usr.get('/todo',(req,res)=>{
     Esquema
         .find({})
         .then(datos=>res.json(datos))
@@ -36,7 +36,7 @@ rutas_usr.post('/actualizar',(req,res)=>{
     Esquema.updateOne({nombre:body.nombre},{
         $set:{
             edad:body.edad,
-            cont:"No existe"
+            cont:body.cont
         }
     },function(error,info){
         if(error){

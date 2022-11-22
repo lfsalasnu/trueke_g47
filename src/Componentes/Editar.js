@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import axios from "axios";
 
-class Formulario extends Component{
+class Editar extends Component{
     constructor(){
         super();
         this.state={
@@ -75,4 +75,4 @@ class Formulario extends Component{
     }
 }
 
-export default Formulario;
+export default Editar;
