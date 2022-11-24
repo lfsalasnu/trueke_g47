@@ -6,7 +6,9 @@ let esquema=mongoose.Schema({
     cantidad:Number,
     valor:String,
     usuario:String,
-    imagen:String
+    imagen:String,
+    mensaje:String,
+    usuario_c:String
 })
 
 let Esquema=mongoose.model("datos",esquema)

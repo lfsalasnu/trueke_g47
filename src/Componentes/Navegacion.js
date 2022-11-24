@@ -5,7 +5,7 @@ import Crear_usuario from "./Crear_usuario";
 import Formulario from "./Formulario";
 import Inicio_sesion from "./Inicio_sesion";
 import Bdmongo from "./Bdmongo";
-import Editar from "./Editar";
+
 class Navegacion extends Component {
     render() {
         return (
@@ -23,9 +23,6 @@ class Navegacion extends Component {
                         </li>
                         <li className="nav-item text-white" role="presentation">
                             <button className="nav-link text-white" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">{this.props.enlace4}</button>
-                        </li>
-                        <li className="nav-item text-white" role="presentation">
-                            <button className="nav-link text-white" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#editar" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Editar Articulo</button>
                         </li>
 
                     </ul>
@@ -53,9 +50,7 @@ class Navegacion extends Component {
                     <div className="tab-pane fade text-white" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
                         <Crear_usuario/>
                     </div>
-                    <div className="tab-pane fade text-white" id="editar" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <Editar/>
-                    </div>
+                    
                 </div>
             </div>
         );

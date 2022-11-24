@@ -4,6 +4,20 @@ const rutas_usr=express.Router()
 
 const Esquema=require('../Modelos/bd_usuarios')
 
+
+rutas_usr.post('/inicio',(req,res)=>{
+    let body=req.body
+    let av=Esquema
+            .findOne({usuario:body.usuario})
+            .then(datos=>res.json(datos))
+    if (body.cont==av.cont){
+        return true
+    }
+    else{
+        return false
+    }
+})
+
 rutas_usr.post('/nuevo',(req,res)=>{
     let body=req.body
     let guardar=new Esquema({
@@ -47,7 +61,7 @@ rutas_usr.post('/actualizar',(req,res)=>{
         }
     })
 })
-
+;2
 rutas_usr.get('/borrar/:id',(req,res)=>{
     let {id}=req.params
     Esquema

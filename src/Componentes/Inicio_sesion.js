@@ -1,4 +1,6 @@
+import axios from "axios";
 import React, { Component } from "react";
+import DAO_inicio_sesion from "./DAO_inicio_sesion";
 
 class Inicio_sesion extends Component {
     constructor(){
@@ -8,6 +10,7 @@ class Inicio_sesion extends Component {
             cont:""
         }
         this.cambio=this.cambio.bind(this);
+        this.inicio=this.inicio.bind(this);
     }
     
     cambio(e){
@@ -15,6 +18,12 @@ class Inicio_sesion extends Component {
             [e.target.name]:e.target.value
         })
     }
+
+    inicio(){
+        //<DAO_inicio_sesion usr={this.state.usr} cont={this.state.cont}/>
+        axios.post('http://localhost:5000/usuarios/inicio',this.state)
+    }
+
     
     render() {
         return (
@@ -38,7 +47,7 @@ class Inicio_sesion extends Component {
                                     <input type="checkbox" value="remember-me"/> Recuerdame
                                 </label>
                             </div>
-                            <button className="w-100 btn btn-lg btn-primary" type="submit">Iniciar sesión</button>
+                            <button className="w-100 btn btn-lg btn-primary" onClick={this.inicio}>Iniciar sesión</button>
                             <p className="mt-5 mb-3 text-muted">Trueke &copy; 2022</p>
                     </form>
                 </main>
